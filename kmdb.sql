@@ -211,7 +211,7 @@ VALUES
 .print ""
 
 -- The SQL statement for the movies output
-SELECT title, year_released, mpaa_rating, studios.name
+SELECT movies.title, movies.year_released, movies.mpaa_rating, studios.name
 FROM movies INNER JOIN studios ON movies.studio_id = studios.id; 
 
 
