@@ -122,7 +122,7 @@ DROP TABLE IF EXISTS characters;
 CREATE TABLE movies (
 id INTEGER PRIMARY KEY AUTOINCREMENT, 
 title TEXT,
-year_released TEXT,
+year_released INTEGER,
 mpaa_rating TEXT,
 studio_id INTEGER
 );
@@ -156,9 +156,9 @@ INSERT INTO movies (
 "studio_id"
 ) 
 VALUES 
-("Batman Begins", "2005","PG-13", 1),
-("The Dark Knight","2008","PG-13",1),
-("The Dark Knight Rises", "2012","PG-13",1);
+("Batman Begins", 2005,"PG-13", 1),
+("The Dark Knight",2008,"PG-13",1),
+("The Dark Knight Rises", 2012,"PG-13",1);
 
 INSERT INTO studios (
 "name"
